@@ -28,6 +28,15 @@ h1 {
     margin: 0 auto;  
 }
 
+.some-text span {
+    color: red;
+    cursor: pointer;
+}
+
+.some-text span:hover {
+    text-decoration: underline;
+}
+
 label {
   display: block;
 }
