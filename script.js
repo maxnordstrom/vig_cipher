@@ -1,3 +1,5 @@
+// Let's try git
+
 $(document).ready(function() {
     
 //    ett försök till funktion av slider
