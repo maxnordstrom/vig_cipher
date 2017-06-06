@@ -45,13 +45,13 @@ $(document).ready(function() {
             
             let outputArea = $(this).closest('body').find('.output-area');
         
-        if (outputArea.hasClass('output-area-active') == false) {
-            outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
-        } else {
-            outputArea.slideUp(400, function() {
-               outputArea.text(userOutput).delay(600).slideDown(600); 
-            });        
-        }
+            if (outputArea.hasClass('output-area-active') == false) {
+                outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
+            } else {
+                outputArea.slideUp(400, function() {
+                   outputArea.text(userOutput).delay(600).slideDown(600); 
+                });        
+            }                                   /* från rad 46 tom 54 skulle kunna vara en egen funktion */
             
         } else if ($(this).hasClass('decrypt-button')) {           /*kolla om knappen har annan klass*/
             // do something else
@@ -64,6 +64,7 @@ $(document).ready(function() {
     
 //    Här testar jag min modal *****
     
+    
     // lägger till aktiv class vid klick
     
     $('.click-here').on('click', function() {
@@ -71,6 +72,12 @@ $(document).ready(function() {
         $(this).closest('body').find('.modal').addClass('modal-active');
     });
     
+    // tar bort klass vid klick
+    
+    $('.modal-close-btn').on('click', function() {
+        $(this).closest('body').find('.modal-overlay').removeClass('modal-overlay-active');
+        $(this).closest('body').find('.modal').removeClass('modal-active');
+    });
     
     
 //    fram till hit ********
