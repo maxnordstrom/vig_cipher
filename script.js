@@ -68,15 +68,21 @@ $(document).ready(function() {
     // lägger till aktiv class vid klick
     
     $('.click-here').on('click', function() {
-        $(this).closest('body').find('.modal-overlay').addClass('modal-overlay-active');
-        $(this).closest('body').find('.modal').addClass('modal-active');
+        $(this).closest('body').find('.modal-overlay').addClass('modal-overlay-active modal-overlay-active-transition');
+        $(this).closest('body').find('.modal').addClass('modal-active modal-active-transition');
     });
     
     // tar bort klass vid klick
     
     $('.modal-close-btn').on('click', function() {
-        $(this).closest('body').find('.modal-overlay').removeClass('modal-overlay-active');
-        $(this).closest('body').find('.modal').removeClass('modal-active');
+        $/*(this).closest*/('body').find('.modal-overlay').removeClass('modal-overlay-active-transition');
+        $/*(this).closest*/('body').find('.modal').removeClass('modal-active-transition');
+        
+        
+        setTimeout(function() {
+            $('body').find('.modal-overlay').removeClass('modal-overlay-active');
+            $('body').find('.modal').removeClass('modal-active'); 
+        }, 500 )
     });
     
     
