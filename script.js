@@ -43,7 +43,7 @@ $(document).ready(function() {
 //            console.log(userOutput);
 //            slider(userOutput);
             
-            let outputArea = $(this).closest('body').find('.output-area');
+            let outputArea = $('.output-area');
         
             if (outputArea.hasClass('output-area-active') == false) {
                 outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
@@ -68,20 +68,20 @@ $(document).ready(function() {
     // lägger till aktiv class vid klick
     
     $('.click-here').on('click', function() {
-        $(this).closest('body').find('.modal-overlay').addClass('modal-overlay-active modal-overlay-active-transition');
-        $(this).closest('body').find('.modal').addClass('modal-active modal-active-transition');
+        $('.modal-overlay').addClass('modal-overlay-active modal-overlay-active-transition');
+        $('.modal').addClass('modal-active modal-active-transition');
     });
     
     // tar bort klass vid klick
     
     $('.modal-close-btn').on('click', function() {
-        $/*(this).closest*/('body').find('.modal-overlay').removeClass('modal-overlay-active-transition');
-        $/*(this).closest*/('body').find('.modal').removeClass('modal-active-transition');
+        $('.modal-overlay').removeClass('modal-overlay-active-transition');
+        $('.modal').removeClass('modal-active-transition');
         
         
         setTimeout(function() {
-            $('body').find('.modal-overlay').removeClass('modal-overlay-active');
-            $('body').find('.modal').removeClass('modal-active'); 
+            $('.modal-overlay').removeClass('modal-overlay-active');
+            $('.modal').removeClass('modal-active'); 
         }, 500 )
     });
     
