@@ -54,12 +54,34 @@ $(document).ready(function() {
             }                                   /* från rad 46 tom 54 skulle kunna vara en egen funktion */
             
         } else if ($(this).hasClass('decrypt-button')) {           /*kolla om knappen har annan klass*/
-            // do something else
-            // here...
-        }
-                
+            
+            let userInput = $('#user-message').val();
+            let userKey = $('.user-key').val();
+            let decryption = decrypt(userInput, userKey, alphabet);
+
+            let userOutput = "";
+
+            for (var i = 0; i < decryption.length; i++) {
+                if (i % 4 === 0) {
+                    userOutput += "\n";
+                }
+                userOutput += decryption[i] + " ";
+            }
+
+            userOutput = userOutput.toUpperCase().trim()
+
+            let outputArea = $(this).closest('body').find('.output-area');
         
+            if (outputArea.hasClass('output-area-active') == false) {
+                outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
+            } else {
+                outputArea.slideUp(400, function() {
+                   outputArea.text(userOutput).delay(600).slideDown(600); 
+                });        
+            } 
+        }    
     });
+});
 
     
 //    Här testar jag min modal *****
@@ -88,30 +110,6 @@ $(document).ready(function() {
     
 //    fram till hit ********
     
-    
-    
-    $('#decrypt-button').on('click', function() {
-        let userInput = $('#user-message').val();
-        let userKey = $('.user-key').val();
-        let decryption = decrypt(userInput, userKey, alphabet);
-        
-        let userOutput = "";
-
-        for (var i = 0; i < decryption.length; i++) {
-            if (i % 4 === 0) {
-                userOutput += "\n";
-            }
-            userOutput += decryption[i] + " ";
-        }
-        
-        userOutput = userOutput.toUpperCase().trim()
-        
-        alert(userOutput); 
-    });
-});
-
-
-
 // HÄR BYGGS KRYPTOKARTAN
 
 const alphabet = 'abcdefghijklmnopqrstuvwxyzåäö';
