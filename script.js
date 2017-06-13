@@ -64,7 +64,7 @@ $(document).ready(function() {
 });
 
     
-//    Här testar jag min modal *****
+// HÄR ÄR MODALEN
     
     
     // lägger till aktiv class vid klick
@@ -87,8 +87,6 @@ $(document).ready(function() {
         }, 500 )
     });
     
-    
-//    fram till hit ********
     
 // HÄR BYGGS KRYPTOKARTAN
 
