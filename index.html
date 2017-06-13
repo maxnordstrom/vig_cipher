@@ -15,43 +15,53 @@
     
         <div class="modal-overlay"></div>
     
-            <div class="modal">
-                <div class="modal-header">
-                    <h3>Instruktioner</h3>
-                    <button class="modal-close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-                </div>
-                <div class="modal-content">
-                    <p>Här kommer det stå instruktioner.</p>
+            <div class="modal-wrapper">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3>Instruktioner</h3>
+                        <button class="modal-close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="modal-content">
+                        <ul>
+                            <li>Skriv in ditt meddelande.</li>
+                            <li>Kom överens om en gemensam nyckel med en vän. Det kan vara ett ord eller en fras.</li>
+                            <li>Skriv in nyckeln och tryck på <i>kryptera</i>.</li>
+                            <li>Nu har du ett meddelande som bara kan dekrypteras med rätt nyckel.</li>
+                            <li>För att dekryptera, skriv den krypterade texten och nyckeln, tryck sen på <i>dekryptera</i>.</li>
+                        </ul>
+                        <p>OBS! Vigenère-kryptot höll sig säkert i ca tre århundraden. Det fick till och med ryktet att vara omöjligt att knäcka. Men det var då det, nu används det bara på skoj. <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Mer info här</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         
         
 <!--        modal slutar här -->
+
+            <h1>Vigenère-kryptot</h1>
+
         
-        <h1>Kryptomaskinen</h1>
-            
-        <section class="some-text">
-            <h3>Använd dig av Vigenère-kryptot för att skicka hemliga meddelanden!</h3>
-            <span class="click-here">Här finns instruktioner.</span> Du kan läsa mer om Vigenère-kryptot på <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Wikipedia</a>.
-        </section>
+            <section class="some-text">
+                <span class="click-here">Instruktioner</span> 
+            </section> 
       
-        <section class="input-fields">
-          <form>
-            <label for="user-message">Ditt meddelande:</label> 
-            <textarea id="user-message" placeholder="Meddelande..." /></textarea>
-            
-            <label for="user-key">Din nyckel:</label> 
-            <input class='user-key' type="text" placeholder="Hemlig nyckel...">
-          </form>
-        
-            <input class="button encrypt-button" id='encrypt-button' type="submit" value="Kryptera">
-            <input class="button decrypt-button" id='decrypt-button' type="submit" value="Dekryptera">
-        </section>
+<!--        <div class="hej">-->
+            <section class="input-fields">
+              <form>
+                <label for="user-message">Ditt meddelande:</label> 
+                <textarea id="user-message" placeholder="Meddelande..." /></textarea>
+
+                <label for="user-key">Din nyckel:</label> 
+                <input class='user-key' type="text" placeholder="Hemlig nyckel...">
+              </form>
+
+                <input class="button encrypt-button" id='encrypt-button' type="submit" value="Kryptera">
+                <input class="button decrypt-button" id='decrypt-button' type="submit" value="Dekryptera">
+            </section>
+<!--        </div>-->
+   
+        <section class="output-area"></section>
     
-        
-        <section class="output-area" />
-    
-        
         <script src="jquery-3.1.1.min.js"></script>
         <script src="script.js"></script>
         
