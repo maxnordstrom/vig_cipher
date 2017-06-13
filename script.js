@@ -38,20 +38,8 @@ $(document).ready(function() {
             }
         
             userOutput = userOutput.toUpperCase().trim();
-        
             
-//            console.log(userOutput);
-//            slider(userOutput);
-            
-            let outputArea = $('.output-area');
-        
-            if (outputArea.hasClass('output-area-active') == false) {
-                outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
-            } else {
-                outputArea.slideUp(400, function() {
-                   outputArea.text(userOutput).delay(600).slideDown(600); 
-                });        
-            }                                   /* från rad 46 tom 54 skulle kunna vara en egen funktion */
+            return slider(userOutput);
             
         } else if ($(this).hasClass('decrypt-button')) {           /*kolla om knappen har annan klass*/
             
@@ -69,16 +57,8 @@ $(document).ready(function() {
             }
 
             userOutput = userOutput.toUpperCase().trim()
-
-            let outputArea = $(this).closest('body').find('.output-area');
-        
-            if (outputArea.hasClass('output-area-active') == false) {
-                outputArea.addClass('output-area-active').text(userOutput).slideDown(600);
-            } else {
-                outputArea.slideUp(400, function() {
-                   outputArea.text(userOutput).delay(600).slideDown(600); 
-                });        
-            } 
+            
+            return slider(userOutput);
         }    
     });
 });
@@ -188,6 +168,24 @@ let decrypt = function(string, key, alphabet) {
   
   return plainText;
 }
+
+
+// HÄR FINNS SLIDERFUNKTIONEN
+
+let slider = function(output) {
+    
+    let outputArea = $('.output-area');
+    
+    console.log(outputArea);
+    
+    if (outputArea.hasClass('output-area-active') == false) {
+        outputArea.addClass('output-area-active').text(output).slideDown(600);
+    } else {
+        outputArea.slideUp(400, function() {
+            outputArea.text(output).delay(600).slideDown(600);
+        });        
+    }
+};
 
 
 
