@@ -2,7 +2,7 @@ html, body, h1, h2, h3, section, form, label, textarea, input {
     padding: 0;
     margin: 0;
     font-family: Inconsolata, monospace;
-} 
+}
 
 /*speciella grejer för att få min overlay*/
 
@@ -26,7 +26,7 @@ h1 {
 
 .some-text {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .some-text span {
@@ -108,7 +108,7 @@ label {
     width: 340px;
     height: 255px;
     position: fixed;
-    top: 17%; 
+    top: 17%;
 /*
     left: 50%;
     margin-top: -100px;
@@ -166,3 +166,7 @@ label {
     justify-content: center;
 }
 */
+
+/*.yo {
+  display: flex;
+}*/
