@@ -25,17 +25,15 @@ h1 {
 }
 
 .some-text {
-    display: flex;
-    justify-content: center;
-}
-
-.some-text span {
+  display: flex;
+  justify-content: center;
+  span {
     color: red;
     cursor: pointer;
-}
-
-.some-text span:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 label {
@@ -86,8 +84,7 @@ label {
     padding: 10px 72px 10px 72px;
 }
 
-/*Testar en modal*/
-
+// Testar en modal
 .modal-overlay,
 .modal {
     opacity: 0;
@@ -135,21 +132,19 @@ label {
 }
 
 .modal-content {
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 15px;
-}
-
-.modal-content p {
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  p {
     font-size: 12px;
-}
-
-.modal-content ul {
+  }
+  ul {
     -webkit-padding-start: 20px;
     -webkit-margin-after: 0;
+  }
 }
 
 .modal-close-btn {
@@ -168,7 +163,6 @@ label {
     justify-content: center;
     z-index: 11;
 }
-
 
 .hej {
     /*display: flex;*/
