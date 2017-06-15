@@ -36,9 +36,18 @@ h1 {
   }
 }
 
-label {
-  display: block;
+form {
+  label {
+    display: block;
+  }
+
+// FIXME
+  textarea {
+    max-width: 27.5em;
+    // max-height: 100%;
+  }
 }
+
 
 .key {
   display: block;

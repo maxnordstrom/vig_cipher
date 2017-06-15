@@ -27,8 +27,10 @@ h1 {
     .some-text span:hover {
       text-decoration: underline; }
 
-label {
+form label {
   display: block; }
+form textarea {
+  max-width: 27.5em; }
 
 .key {
   display: block; }
