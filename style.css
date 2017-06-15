@@ -6,14 +6,14 @@ html, body, h1, h2, h3, section, form, label, textarea, input {
 
 /*speciella grejer för att få min overlay*/
 
-html {
+/*html {
     height: 100%;
-}
+}*/
 
-body {
+/*body {
     min-height: 100%;
     position: relative;
-}
+}*/
 
 /*speciella grejer slutar här*/
 
@@ -48,19 +48,28 @@ label {
 
 .input-fields {
     margin: 10px auto 0 auto;
-    max-width: 200px;
+    max-width: 33%;
     border-style: solid;
     border-width: 2px;
-    text-align: center;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0;
+
 }
 
-.user-key {
+.btn-div {
+  align-self: center;
+}
+
+/*.user-key {
     display: inline;
-}
+}*/
 
-.encrypt-button, .decrypt-button {
+/*.encrypt-button, .decrypt-button {
     margin: 5px 0px 5px 0px;
-}
+}*/
 
 
 .output-area {                        /* här är det i mitten av skärmen */
@@ -160,13 +169,10 @@ label {
     z-index: 11;
 }
 
-/*
-.hej {
-    display: flex;
-    justify-content: center;
-}
-*/
 
-/*.yo {
-  display: flex;
-}*/
+.hej {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*margin: 0 auto;
+    text-align: center;*/
+}
