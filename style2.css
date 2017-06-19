@@ -1,8 +1,10 @@
 @charset "UTF-8";
+/* line 1, style2.scss */
 html, body, h1, h2, h3, section, form, label, textarea, input {
   padding: 0;
   margin: 0;
-  font-family: Inconsolata, monospace; }
+  font-family: Inconsolata, monospace;
+}
 
 /*speciella grejer för att få min overlay*/
 /*html {
@@ -13,28 +15,52 @@ html, body, h1, h2, h3, section, form, label, textarea, input {
     position: relative;
 }*/
 /*speciella grejer slutar här*/
+/* line 21, style2.scss */
 h1 {
   font-size: 1.6em;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 27, style2.scss */
 .some-text {
   display: flex;
-  justify-content: center; }
-  .some-text span {
-    color: red;
-    cursor: pointer; }
-    .some-text span:hover {
-      text-decoration: underline; }
+  justify-content: center;
+}
+/* line 30, style2.scss */
+.some-text span {
+  color: red;
+  cursor: pointer;
+}
+/* line 33, style2.scss */
+.some-text span:hover {
+  text-decoration: underline;
+}
 
+/* line 39, style2.scss */
+form {
+  width: 80%;
+}
+/* line 41, style2.scss */
 form label {
-  display: block; }
+  display: block;
+}
+/* line 44, style2.scss */
 form textarea {
-  max-width: 27.5em; }
+  width: 100%;
+  resize: vertical;
+}
+/* line 48, style2.scss */
+form input {
+  width: 100%;
+}
 
+/* line 54, style2.scss */
 .key {
-  display: block; }
+  display: block;
+}
 
+/* line 58, style2.scss */
 .input-fields {
   margin: 10px auto 0 auto;
   max-width: 25%;
@@ -44,10 +70,13 @@ form textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4% 0; }
+  padding: 4% 0;
+}
 
+/* line 71, style2.scss */
 .btn-div {
-  align-self: center; }
+  align-self: center;
+}
 
 /*.user-key {
     display: inline;
@@ -55,30 +84,38 @@ form textarea {
 /*.encrypt-button, .decrypt-button {
     margin: 5px 0px 5px 0px;
 }*/
+/* line 84, style2.scss */
 .output-area {
-  /* här är det i mitten av skärmen */
   display: none;
   margin: 0 auto;
-  width: 56px;
+  max-width: 25%;
   border-style: solid;
-  border-width: 0 2px 2px 2px; }
+  border-width: 0 2px 2px 2px;
+}
 
+/* line 92, style2.scss */
 .output-area-active {
   white-space: pre;
-  text-align: justify;
-  padding: 10px 72px 10px 72px; }
+  padding: 1% 0;
+  font-size: 1.2em;
+}
 
+/* line 101, style2.scss */
 .modal-overlay,
 .modal {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s;
-  position: absolute; }
+  position: absolute;
+}
 
+/* line 109, style2.scss */
 .modal-overlay-active-transition,
 .modal-active-transition {
-  opacity: 1; }
+  opacity: 1;
+}
 
+/* line 114, style2.scss */
 .modal-overlay-active {
   visibility: visible;
   position: fixed;
@@ -87,8 +124,10 @@ form textarea {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10; }
+  z-index: 10;
+}
 
+/* line 125, style2.scss */
 .modal-active {
   visibility: visible;
   width: 340px;
@@ -102,26 +141,36 @@ form textarea {
   */
   background-color: #f1c40f;
   border-radius: 5px;
-  z-index: 11; }
+  z-index: 11;
+}
 
+/* line 141, style2.scss */
 .modal-header {
   display: flex;
   justify-content: space-between;
-  margin: 3px 5px 0; }
+  margin: 3px 5px 0;
+}
 
+/* line 147, style2.scss */
 .modal-content {
   margin: 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 15px; }
-  .modal-content p {
-    font-size: 12px; }
-  .modal-content ul {
-    -webkit-padding-start: 20px;
-    -webkit-margin-after: 0; }
+  font-size: 15px;
+}
+/* line 154, style2.scss */
+.modal-content p {
+  font-size: 12px;
+}
+/* line 157, style2.scss */
+.modal-content ul {
+  -webkit-padding-start: 20px;
+  -webkit-margin-after: 0;
+}
 
+/* line 163, style2.scss */
 .modal-close-btn {
   padding: 1px 2px;
   background-color: gainsboro;
@@ -129,18 +178,21 @@ form textarea {
   border-radius: 4px;
   line-height: 20px;
   width: 20px;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 173, style2.scss */
 .modal-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 11; }
+  z-index: 11;
+}
 
+/* line 180, style2.scss */
 .hej {
   /*display: flex;*/
   /*justify-content: center;*/
   /*margin: 0 auto;
-  text-align: center;*/ }
-
-/*# sourceMappingURL=new_style.css.map */
+  text-align: center;*/
+}

@@ -155,13 +155,15 @@ let slider = function(output) {
 
     let outputArea = $('.output-area');
 
-    console.log(outputArea);
-
     if (outputArea.hasClass('output-area-active') == false) {
-        outputArea.addClass('output-area-active').text(output).slideDown(600);
+        outputArea.addClass('output-area-active').
+        text(output).slideDown(600);
+        $('.output-area-active').css('display', 'flex').
+        css('justify-content', 'center');
     } else {
         outputArea.slideUp(400, function() {
-            outputArea.text(output).delay(600).slideDown(600);
+            outputArea.text(output).delay(600).
+            slideDown(600);
         });
     }
 };
