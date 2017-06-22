@@ -52,7 +52,7 @@ form textarea {
 }
 /* line 48, style2.scss */
 form input {
-  width: 100%;
+  width: 99.20%;
 }
 
 /* line 54, style2.scss */
@@ -74,8 +74,14 @@ form input {
 }
 
 /* line 71, style2.scss */
+.message-label {
+  margin-bottom: 3px;
+}
+
+/* line 75, style2.scss */
 .btn-div {
-  align-self: center;
+  width: 80%;
+  padding-top: 2%;
 }
 
 /*.user-key {
@@ -84,7 +90,7 @@ form input {
 /*.encrypt-button, .decrypt-button {
     margin: 5px 0px 5px 0px;
 }*/
-/* line 84, style2.scss */
+/* line 89, style2.scss */
 .output-area {
   display: none;
   margin: 0 auto;
@@ -93,14 +99,14 @@ form input {
   border-width: 0 2px 2px 2px;
 }
 
-/* line 92, style2.scss */
+/* line 97, style2.scss */
 .output-area-active {
   white-space: pre;
   padding: 1% 0;
   font-size: 1.2em;
 }
 
-/* line 101, style2.scss */
+/* line 106, style2.scss */
 .modal-overlay,
 .modal {
   opacity: 0;
@@ -109,13 +115,13 @@ form input {
   position: absolute;
 }
 
-/* line 109, style2.scss */
+/* line 114, style2.scss */
 .modal-overlay-active-transition,
 .modal-active-transition {
   opacity: 1;
 }
 
-/* line 114, style2.scss */
+/* line 119, style2.scss */
 .modal-overlay-active {
   visibility: visible;
   position: fixed;
@@ -127,7 +133,7 @@ form input {
   z-index: 10;
 }
 
-/* line 125, style2.scss */
+/* line 130, style2.scss */
 .modal-active {
   visibility: visible;
   width: 340px;
@@ -144,33 +150,39 @@ form input {
   z-index: 11;
 }
 
-/* line 141, style2.scss */
+/* line 146, style2.scss */
 .modal-header {
   display: flex;
   justify-content: space-between;
   margin: 3px 5px 0;
 }
+/* line 150, style2.scss */
+.modal-header h3 {
+  padding-top: 2px;
+  font-weight: bolder;
+}
 
-/* line 147, style2.scss */
+/* line 156, style2.scss */
 .modal-content {
   margin: 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 15px;
+  font-size: 16px;
 }
-/* line 154, style2.scss */
+/* line 163, style2.scss */
 .modal-content p {
-  font-size: 12px;
+  font-size: 14px;
+  margin: 33px 11px 0 11px;
 }
-/* line 157, style2.scss */
+/* line 167, style2.scss */
 .modal-content ul {
   -webkit-padding-start: 20px;
   -webkit-margin-after: 0;
 }
 
-/* line 163, style2.scss */
+/* line 173, style2.scss */
 .modal-close-btn {
   padding: 1px 2px;
   background-color: gainsboro;
@@ -181,7 +193,7 @@ form input {
   text-align: center;
 }
 
-/* line 173, style2.scss */
+/* line 183, style2.scss */
 .modal-wrapper {
   width: 100%;
   display: flex;
@@ -189,10 +201,9 @@ form input {
   z-index: 11;
 }
 
-/* line 180, style2.scss */
-.hej {
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*margin: 0 auto;
-  text-align: center;*/
+@media screen and (max-width: 420px) {
+  /* line 192, style2.scss */
+  .input-fields, .output-area {
+    max-width: 80%;
+  }
 }

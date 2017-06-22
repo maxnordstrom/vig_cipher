@@ -126,7 +126,7 @@ let encrypt = function(string, key, alphabet) {
 // HÄR KOMMER DEKRYPTERINGSFUNKTIONEN
 
 let decrypt = function(string, key, alphabet) {
-	string = string.toLowerCase().trim();
+  string = string.toLowerCase().trim();
     string = string.replace(/\s/g, '');
     key = key.toLowerCase().trim();
     key = key.replace(/\s/g, '');
@@ -167,6 +167,7 @@ let slider = function(output) {
         });
     }
 };
+
 
 
 

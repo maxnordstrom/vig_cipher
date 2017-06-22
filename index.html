@@ -23,12 +23,10 @@
         <div class="modal-content">
           <ul>
             <li>Skriv in ditt meddelande.</li>
-            <li>Kom överens om en gemensam nyckel med en vän. Det kan vara ett ord eller en fras.</li>
-            <li>Skriv in nyckeln och tryck på <i>kryptera</i>.</li>
-            <li>Nu har du ett meddelande som bara kan dekrypteras med rätt nyckel.</li>
-            <li>För att dekryptera, skriv den krypterade texten och nyckeln, tryck sen på <i>dekryptera</i>.</li>
+            <li>Skriv in nyckeln, det kan vara ett ord eller en fras.</li>
+            <li>Tryck på <i>kryptera</i> eller <i>dekryptera</i>.</li>
           </ul>
-          <p>OBS! Vigenère-kryptot höll sig säkert i ca tre århundraden. Det fick till och med ryktet att vara omöjligt att knäcka. Men det var då det, nu används det bara på skoj. <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Mer info här</a>
+          <p>OBS! Vigenère-kryptot höll sig säkert i ca tre århundraden. Det fick till och med ryktet att vara omöjligt att knäcka. Men det var då det, nu används det bara på skoj. Mer info på <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Wikipedia</a>.
           </p>
         </div>
       </div>
@@ -44,8 +42,8 @@
 
     <section class="input-fields">
       <form>
-        <label for="user-message">Ditt meddelande:</label>
-        <textarea id="user-message" placeholder="Meddelande..." /></textarea>
+        <label class="message-label" for="user-message">Ditt meddelande:</label>
+        <textarea rows="5" id="user-message" placeholder="Meddelande..." /></textarea>
         <label for="user-key">Din nyckel:</label>
         <input class='user-key' type="text" placeholder="Hemlig nyckel...">
       </form>

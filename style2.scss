@@ -46,7 +46,7 @@ form {
     resize: vertical;
   }
   input {
-    width: 100%;
+    width: 99.20%;
   }
 }
 
@@ -68,8 +68,13 @@ form {
     // position: relative;
 }
 
+.message-label {
+  margin-bottom: 3px;
+}
+
 .btn-div {
-  align-self: center;
+  width: 80%;
+  padding-top: 2%;
 }
 
 /*.user-key {
@@ -142,6 +147,10 @@ form {
     display: flex;
     justify-content: space-between;
     margin: 3px 5px 0;
+    h3 {
+      padding-top: 2px;
+      font-weight: bolder;
+    }
 }
 
 .modal-content {
@@ -150,9 +159,10 @@ form {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 15px;
+  font-size: 16px;
   p {
-    font-size: 12px;
+    font-size: 14px;
+    margin: 33px 11px 0 11px;
   }
   ul {
     -webkit-padding-start: 20px;
@@ -177,9 +187,9 @@ form {
     z-index: 11;
 }
 
-.hej {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*margin: 0 auto;
-    text-align: center;*/
+// Media queries
+@media screen and (max-width: 420px) {
+  .input-fields, .output-area {
+    max-width: 80%;
+  }
 }
