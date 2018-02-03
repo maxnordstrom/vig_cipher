@@ -1,1 +1,1 @@
-this is a README file for the Vigenère cipher web application.
+Just download files and run in your favourite browser.
