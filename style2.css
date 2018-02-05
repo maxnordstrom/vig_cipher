@@ -210,9 +210,32 @@ form input {
   z-index: 11;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   /* line 198, style2.scss */
   .input-fields, .output-area {
     max-width: 80%;
+    border-style: none;
+  }
+
+  /* line 202, style2.scss */
+  label {
+    font-size: 1.5rem;
+  }
+
+  /* line 205, style2.scss */
+  textarea, input {
+    font-size: 1.2rem;
+  }
+
+  /* line 208, style2.scss */
+  .button {
+    width: 100px;
+  }
+
+  /* line 211, style2.scss */
+  .output-area-active {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: -7%;
   }
 }

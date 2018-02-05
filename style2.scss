@@ -194,8 +194,23 @@ form {
 }
 
 // Media queries
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .input-fields, .output-area {
     max-width: 80%;
+    border-style: none;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  textarea, input {
+    font-size: 1.2rem;
+  }
+  .button {
+    width: 100px;
+  }
+  .output-area-active {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: -7%;
   }
 }
